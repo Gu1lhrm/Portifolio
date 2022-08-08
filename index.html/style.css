@@ -47,6 +47,18 @@
     border-color: transparent;
 }
 
+#eu {
+    width: 500px;
+    border-radius: 2%;
+}
+
+#foto {
+    border-color: transparent;
+    position: absolute;
+    top: 10%;
+    left: 55%
+}
+
 body {
     background-color: black;
 }
