@@ -1,11 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baskervville', serif;
+}
+
 .flex-container {
     display: flex;
 }
 
 .button {
-    background-color: transparent;
     color: white;
-    border: none;
     padding: 15px 32px;
     text-decoration: none;
     display: inline-block;
@@ -17,15 +21,17 @@
 }
 
 .button:hover {
-    background-color: #E2A3F5;
+    color: #C29AF8;
 }
 
 .fieldset {
     border-color: transparent;
+    padding: 5px;
+    margin: 5px;
 }
 
 .fieldset:hover {
-    box-shadow: 2px 2px 4px #9D00F5;
+    box-shadow: 0px 2px #9D00F5;
     transition-duration: 0.6s;
 }
 
