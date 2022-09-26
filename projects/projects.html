@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+    <script src="project.js" defer></script>
 
 </head>
-<body style="background-image: linear-gradient(white, black);">
+<body>
     <fieldset style="border-color: transparent;">
         <nav class="fieldset">
             <div class="flex-container">
@@ -27,12 +28,17 @@
             </div>
         </nav>
     </fieldset>
-    
-    <fieldset id="nome" style="color: white;">
-        <h1>
-            Projects
-        </h1>
-        <hr style="height: 3px; width: 112px; background-color: #9D00F5; color: #000; border-color: transparent;">
-    </fieldset>
+
+    <button id="open-modal">Clique aqui</button>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>#1 equestrianism</h2>
+            <button id="close-modal">Fechar</button>
+        </div>
+        <div class="modal-body">
+            <p>During 2021, I became the first placed in a competition in Associação Brasileira de Hipismo</p>
+        </div>
+    </div>
 </body>
 </html>
