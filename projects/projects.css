@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baskervville', serif;
+}
+
+.button {
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100px;
+    transition-duration: 0.6s;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button:hover {
+    color: #C29AF8;
+}
+
+.fieldset {
+    border-color: transparent;
+    padding: 5px;
+    margin: 5px;
+}
+
+.flex-container {
+    width: fit-content;
+    display: flex;
+}
+
+#caixa {
+    border-color: transparent;
+}
+
+#nome {
+    width: fit-content;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    border-color: transparent;
+}
