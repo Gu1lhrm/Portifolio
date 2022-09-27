@@ -5,49 +5,15 @@
     box-sizing: border-box;
 }
 
-.button {
-    color: white;
-    padding: 15px 32px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 150px;
-    transition-duration: 0.6s;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.button:hover {
-    color: #C29AF8;
-}
-
 #fade, #modal {
     transition: .5s;
     opacity: 1;
     pointer-events: all;
 }
 
-.fieldset {
-    border-color: transparent;
-    padding: 5px;
-    margin: 5px;
-}
-
-.flex-container {
-    width: fit-content;
-    display: flex;
-}
-
-#caixa {
-    border-color: transparent;
-}
-
-#nome {
-    width: fit-content;
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    border-color: transparent;
+.active {
+    color: #C29AF8;
+    
 }
 
 h1 {
@@ -61,17 +27,21 @@ button {
     border: transparent;
     border-radius: .50rem;
     cursor: pointer;
-    opacity: .6;
+    opacity: 1;
     font-size: 1rem;
 }
 
 button:hover {
-    opacity: 1;
-    transition-duration: .7s;
+    opacity: .6;
+    transition-duration: .5s;
 }
 
 #open-modal {
     background-color: green;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #fade {
@@ -115,6 +85,69 @@ button:hover {
     pointer-events: none;
 }
 
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 1;
+}
+  
+.topnav a:hover {
+    opacity: .6;
+    transition-duration: .6s;
+}
+  
+.topnav a.active {
+    background-color: transparent;
+    color: #C29AF8;
+}
+  
+.topnav .icon {
+    display: none;
+    opacity: 1;
+    height: 3px;
+    width: 3px;
+    right: 0%;
+    float: right;
+}
+
 body {
     padding: 1rem;
+    background-color: black;
+    max-height: 100%;
+    max-width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(.active) {display: none;}
+    .topnav a.icon {
+        float: right;
+        right: 0%;
+        height: 3px;
+        width: 3px;
+        display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
