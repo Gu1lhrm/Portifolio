@@ -21,6 +21,12 @@
     color: #C29AF8;
 }
 
+#fade, #modal {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
 .fieldset {
     border-color: transparent;
     padding: 5px;
@@ -106,6 +112,7 @@ button:hover {
 #modal.hide,
 #fade.hide {
     opacity: 0;
+    pointer-events: none;
 }
 
 body {
