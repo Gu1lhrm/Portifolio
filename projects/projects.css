@@ -43,7 +43,7 @@
     margin: 10px;
 }
 
-.close {
+.close, .close2, .close3 {
     color: var(--main);
     float: right;
     font-size: 28px;
@@ -57,13 +57,6 @@
     cursor: pointer;
 }
 
-.close2 {
-    color: var(--main);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
 .close2:hover,
 .close2:focus {
     color: #000;
@@ -71,14 +64,14 @@
     cursor: pointer;
 }
 
-.equitarismTitle {
-    text-align: center;
-    margin-left: 20px;
-    font-size: 1.5em;
-    color: var(--main);
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.columbiaTitle {
+.equitarismTitle, .columbiaTitle, .rocketTitle {
     text-align: center;
     margin-left: 20px;
     font-size: 1.5em;
