@@ -21,6 +21,58 @@
     color: #C29AF8;
 }
 
+.button {
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button:hover {
+    color: #C29AF8;
+    opacity: .6;
+    transition-duration: .5s;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 1;
+}
+  
+.topnav a:hover {
+    opacity: .6;
+    transition-duration: .6s;
+}
+  
+.topnav a.active {
+    background-color: transparent;
+    color: #C29AF8;
+}
+  
+.topnav .icon {
+    display: none;
+    opacity: 1;
+    height: 3px;
+    width: 3px;
+    right: 0%;
+    float: right;
+    padding: 10rem;
+}
+
 .fieldset {
     border-color: transparent;
     padding: 5px;
@@ -61,4 +113,8 @@
     border-radius: 100%;
     border-width: 2px;
     width: 125px;
+}
+
+body {
+    padding: 1rem;
 }

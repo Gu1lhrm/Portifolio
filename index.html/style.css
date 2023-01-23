@@ -5,33 +5,60 @@
     box-sizing: border-box;
 }
 
-.ph-github-logo {
-    position: relative;
-    left: 5px;
-    
-    max-width: 50px;
-    font-size: 50px;
-    height: 75px;
-}
-
 .flex-container {
     display: flex;
 }
 
 .button {
-    color: white;
-    padding: 15px 32px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 100px;
-    transition-duration: 0.6s;
-    border-radius: 5px;
-    text-align: center;
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .button:hover {
     color: #C29AF8;
+    opacity: .6;
+    transition-duration: .5s;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 1;
+}
+  
+.topnav a:hover {
+    opacity: .6;
+    transition-duration: .6s;
+}
+  
+.topnav a.active {
+    background-color: transparent;
+    color: #C29AF8;
+}
+  
+.topnav .icon {
+    display: none;
+    opacity: 1;
+    height: 3px;
+    width: 3px;
+    right: 0%;
+    float: right;
+    padding: 10rem;
 }
 
 .fieldset {
@@ -65,5 +92,6 @@
 }
 
 body {
+    padding: 1rem;
     background-color: #040108;
 }

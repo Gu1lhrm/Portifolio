@@ -125,7 +125,6 @@ a:link, a:visited {
 
 .active {
     color: #C29AF8;
-    
 }
 
 button {
@@ -144,11 +143,27 @@ button:hover {
     transition-duration: .5s;
 }
 
+.button {
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button:hover {
+    color: #C29AF8;
+    opacity: .6;
+    transition-duration: .5s;
+}
+
 .topnav {
     overflow: hidden;
     background-color: transparent;
 }
-  
+
 .topnav a {
     float: left;
     display: block;
